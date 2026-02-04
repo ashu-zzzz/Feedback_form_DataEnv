@@ -5,24 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity #1: Customer Service Feedback</title>
     <style>
-        /* --- 1. MODERN RESET & FONTS --- */
         body {
             font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Modern Gradient */
+            background: #b2bec5;
             color: #050505;
             margin: 0;
             padding: 40px 20px;
             min-height: 100vh;
         }
 
-        /* --- 2. MAIN CONTAINER --- */
         .container {
             max-width: 750px;
             margin: 0 auto;
-            background-color: transparent; /* Container itself is invisible, children have backgrounds */
+            background-color: transparent;
         }
 
-        /* --- 3. HEADER CARD --- */
         header {
             background: #dbd1d1;
             padding: 40px;
@@ -30,7 +27,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
             text-align: center;
             margin-bottom: 30px;
-            border-top: 6px solid #ff6b6b; /* Accent color strip */
+            border-top: 6px solid #ff6b6b;
         }
 
         h1 {
@@ -45,11 +42,9 @@
             font-size: 1.1em;
         }
 
-        /* --- 4. FORM SECTIONS (CARDS) --- */
         fieldset {
             background: #e2dada;
-
-            border: none; /* Remove default border */
+            border: none;
             border-radius: 12px;
             padding: 30px;
             margin-bottom: 25px;
@@ -58,7 +53,7 @@
         }
 
         fieldset:hover {
-            transform: translateY(-2px); /* Subtle lift effect */
+            transform: translateY(-2px);
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
 
@@ -72,7 +67,6 @@
             border-radius: 4px;
         }
 
-        /* --- 5. QUESTION STYLING --- */
         .question-group {
             margin-bottom: 25px;
             padding-bottom: 15px;
@@ -91,7 +85,6 @@
             font-size: 1.05em;
         }
 
-        /* --- 6. INPUT FIELDS --- */
         select, input[type="text"], input[type="number"], textarea {
             width: 100%;
             padding: 12px 15px;
@@ -103,7 +96,6 @@
             box-sizing: border-box;
         }
 
-        /* Glow effect on focus */
         select:focus, input:focus, textarea:focus {
             border-color: #575e7c;
             background-color: #fff;
@@ -111,7 +103,6 @@
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
         }
 
-        /* --- 7. RADIO & CHECKBOX GROUPS --- */
         .options-group label {
             display: inline-flex;
             align-items: center;
@@ -130,11 +121,10 @@
 
         input[type="radio"], input[type="checkbox"] {
             margin-right: 8px;
-            accent-color: #667eea; /* Makes the dot purple/blue */
+            accent-color: #667eea;
             transform: scale(1.2);
         }
 
-        /* --- 8. LIKERT SCALE GRID --- */
         .likert-scale {
             display: flex;
             justify-content: space-between;
@@ -155,7 +145,6 @@
             margin: 0 auto 8px auto;
         }
 
-        /* --- 9. SUBMIT BUTTON --- */
         button.submit-btn {
             display: block;
             width: 100%;
@@ -163,7 +152,7 @@
             background: linear-gradient(to right, #667eea, #764ba2);
             color: white;
             border: none;
-            border-radius: 50px; /* Pill shape */
+            border-radius: 50px;
             font-size: 1.2em;
             font-weight: bold;
             cursor: pointer;
@@ -181,7 +170,6 @@
             transform: translateY(-1px);
         }
 
-        /* --- 10. RANGE SLIDER --- */
         input[type="range"] {
             width: 80%;
             margin-right: 10px;
@@ -194,7 +182,6 @@
             color: #764ba2;
         }
 
-        /* Responsive Fixes */
         @media (max-width: 600px) {
             .likert-scale {
                 flex-direction: column;
@@ -225,7 +212,6 @@
     </header>
 
     <form action="thankyou.html" method="get">
-
         
         <fieldset>
             <legend>1. Customer Purchase Experience</legend>
